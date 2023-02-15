@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DocTruyenActivity">
+    <ImageView
+        android:id="@+id/imgAnh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ImageView>
+
+        <ImageView
+            android:onClick="left"
+            android:background="@drawable/bg_left"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/arrow_left"
+            android:layout_centerVertical="true"
+            app:tint="#fff"
+            ></ImageView>
+    <ImageView
+        android:onClick="right"
+        android:background="@drawable/bg_left"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/arrow_left"
+        android:layout_centerVertical="true"
+        app:tint="#fff"
+        android:layout_alignParentRight="true"
+        android:rotation="180"
+        ></ImageView>
+    <TextView
+        android:id="@+id/txvSoTrang"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:paddingLeft="10dp"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="#fff"
+        android:text="10/20"
+        android:paddingRight="10dp"
+        android:background="@drawable/bg_so_trang"
+        android:layout_marginBottom="30dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ></TextView>
+</RelativeLayout>
